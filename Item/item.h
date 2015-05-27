@@ -6,7 +6,8 @@
 #include <Magic/spell.h>
 #include "types.h"
 #include <QString>
-
+namespace TeridiumWar{
+namespace Items{
 class Item : public QObject
 {
     Q_OBJECT
@@ -29,5 +30,5 @@ signals:
 
 public slots:
 };
-
+}}
 #endif // ITEM_H
