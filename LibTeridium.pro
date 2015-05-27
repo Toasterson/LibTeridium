@@ -18,7 +18,10 @@ SOURCES += \
     Magic/spell.cpp \
     Item/item.cpp \
     Item/weapon.cpp \
-    Item/magicweapon.cpp
+    Item/magicweapon.cpp \
+    Item/rangedweapon.cpp \
+    Item/projectile.cpp \
+    Characters/character.cpp
 
 HEADERS += \
     qtyaml.h \
@@ -29,7 +32,10 @@ HEADERS += \
     Magic/spell.h \
     Item/item.h \
     Item/weapon.h \
-    Item/magicweapon.h
+    Item/magicweapon.h \
+    Item/rangedweapon.h \
+    Item/projectile.h \
+    Characters/character.h
 unix {
     target.path = /usr/lib
     INSTALLS += target

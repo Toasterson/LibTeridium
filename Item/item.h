@@ -23,7 +23,10 @@ public:
     }
     QString name;
     QString description;
-    TeridiumWar::Items::Rarity rarity;
+    TeridiumWar::Items::Rarity rarity = TeridiumWar::Items::Invalid;
+    std::string rarityColor(){
+        return RarityColors[this->rarity];
+    }
     TeridiumWar::Magic::Spell echantment;
 
 signals:

@@ -33,17 +33,30 @@ namespace Items{
         OneHanded,
         TwoHanded
     };
-    //Todo Refactor to Constants and an enum for Reference.
+
     enum Rarity{
-        Gray = "#606860",
-        White = "#F0F0F0",
-        Lime = "#00FF00",
-        Navy = "#000080",
-        BlueViolet = "#8028E0",
-        OrangeRed = "#FF4500",
-        Beige = "#F5F5DC",
-        LightPink = "#FFB6C1",
-        Pink = "#FFC0CB"
+        Invalid = -1,
+        Gray = 0,
+        White = 1,
+        Lime,
+        Navy,
+        BlueViolet,
+        OrangeRed,
+        Beige,
+        LightPink,
+        Pink
+    };
+
+    const std::string RarityColors[] = {
+        "#606860",
+        "#F0F0F0",
+        "#00FF00",
+        "#000080",
+        "#8028E0",
+        "#FF4500",
+        "#F5F5DC",
+        "#FFB6C1",
+        "#FFC0CB"
     };
 }
 }

@@ -2,7 +2,8 @@
 #define CHARACTER_H
 
 #include <QObject>
-
+namespace TeridiumWar{
+namespace Characters{
 class Character : public QObject
 {
     Q_OBJECT
@@ -13,5 +14,5 @@ signals:
 
 public slots:
 };
-
+}}
 #endif // CHARACTER_H
