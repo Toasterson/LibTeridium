@@ -14,12 +14,22 @@ CONFIG += staticlib
 
 INCLUDEPATH += $$PWD/../yaml-cpp/include
 
-SOURCES +=
+SOURCES += \
+    Magic/spell.cpp \
+    Item/item.cpp \
+    Item/weapon.cpp \
+    Item/magicweapon.cpp
 
 HEADERS += \
     qtyaml.h \
     vec3.h \
-    power.h
+    power.h \
+    Item/types.h \
+    Magic/types.h \
+    Magic/spell.h \
+    Item/item.h \
+    Item/weapon.h \
+    Item/magicweapon.h
 unix {
     target.path = /usr/lib
     INSTALLS += target
