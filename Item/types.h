@@ -2,10 +2,10 @@
 #define ITEMTYPES
 namespace TeridiumWar{
 namespace Items{
+namespace Types{
 
     enum ItemType {
         Weapon,
-        Shield,
         Armor,
         Clothing
     };
@@ -18,7 +18,8 @@ namespace Items{
         Staff,
         Wand,
         Dager,
-        Rapier
+        Rapier,
+        Shield
     };
 
     enum ProjectileType{
@@ -58,6 +59,7 @@ namespace Items{
         "#FFB6C1",
         "#FFC0CB"
     };
+}
 }
 }
 #endif // ITEMTYPES

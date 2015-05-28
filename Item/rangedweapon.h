@@ -9,7 +9,7 @@ namespace Items {
     public:
         RangedWeapon();
         int range;
-        TeridiumWar::Items::ProjectileType projectileType;
+        TeridiumWar::Items::Types::ProjectileType projectileType;
 
     };
 }}

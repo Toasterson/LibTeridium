@@ -1,15 +1,18 @@
 #ifndef CHARACTER_H
 #define CHARACTER_H
 
-#include <QObject>
+#include <QQuickItem>
+#include <QString>
+#include "Item/item.h"
 namespace TeridiumWar{
 namespace Characters{
-class Character : public QObject
+class Character : public QQuickItem
 {
     Q_OBJECT
 public:
-    explicit Character(QObject *parent = 0);
-
+    explicit Character(QQuickItem *parent = 0);
+    int currentHealth, maxHealth, currentMana, maxMana, attack, defense, experience, damage;
+    QString id;
 signals:
 
 public slots:

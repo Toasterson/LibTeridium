@@ -8,8 +8,8 @@ class Weapon : public Item
 {
 public:
     Weapon();
-    TeridiumWar::Items::WeaponType weaponType;
-    TeridiumWar::Items::HoldingType holdingType;
+    TeridiumWar::Items::Types::WeaponType weaponType;
+    TeridiumWar::Items::Types::HoldingType holdingType;
     int attack, defense, damage;
     bool armorPiercing;
 };

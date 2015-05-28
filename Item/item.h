@@ -1,19 +1,20 @@
 #ifndef ITEM_H
 #define ITEM_H
 
-#include <QObject>
-#include <Magic/types.h>
-#include <Magic/spell.h>
+#include <QQuickItem>
+#include "../Magic/types.h"
+#include "../Magic/spell.h"
 #include "types.h"
 #include <QString>
+
 namespace TeridiumWar{
 namespace Items{
-class Item : public QObject
+class Item : public QQuickItem
 {
     Q_OBJECT
 public:
-    explicit Item(QObject *parent = 0);
-    TeridiumWar::Items::ItemType itemType;
+    explicit Item(QQuickItem *parent = 0);
+    TeridiumWar::Items::Types::ItemType itemType;
     int stackSize, weigth;
     bool stackAble(){
         if(stackSize > 0){
@@ -23,9 +24,9 @@ public:
     }
     QString name;
     QString description;
-    TeridiumWar::Items::Rarity rarity = TeridiumWar::Items::Invalid;
+    TeridiumWar::Items::Types::Rarity rarity;
     std::string rarityColor(){
-        return RarityColors[this->rarity];
+        return Types::RarityColors[this->rarity];
     }
     TeridiumWar::Magic::Spell echantment;
 

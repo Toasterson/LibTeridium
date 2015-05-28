@@ -1,7 +1,7 @@
 #include "character.h"
 namespace TeridiumWar{
 namespace Characters{
-Character::Character(QObject *parent) : QObject(parent)
+Character::Character(QQuickItem *parent) : QQuickItem(parent)
 {
 
 }

@@ -1,7 +1,7 @@
 #include "spell.h"
 namespace TeridiumWar{
 namespace Magic{
-Spell::Spell(QObject *parent) : QObject(parent)
+Spell::Spell(QQuickItem *parent) : QQuickItem(parent)
 {
 
 }

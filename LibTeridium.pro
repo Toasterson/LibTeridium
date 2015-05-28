@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += svg
+QT       += svg core quick
 
 QT       -= gui
 
@@ -21,7 +21,8 @@ SOURCES += \
     Item/magicweapon.cpp \
     Item/rangedweapon.cpp \
     Item/projectile.cpp \
-    Characters/character.cpp
+    Characters/character.cpp \
+    Characters/hero.cpp
 
 HEADERS += \
     qtyaml.h \
@@ -35,7 +36,8 @@ HEADERS += \
     Item/magicweapon.h \
     Item/rangedweapon.h \
     Item/projectile.h \
-    Characters/character.h
+    Characters/character.h \
+    Characters/hero.h
 unix {
     target.path = /usr/lib
     INSTALLS += target
